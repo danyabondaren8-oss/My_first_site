@@ -1,0 +1,146 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title {
+    padding: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+.title span{
+    color: #ff6363;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main img {
+    max-width: 600px;
+}
+
+.main-inf {
+    max-width: 500px;
+}
+
+.main-inf ul {
+    padding-left: 17px;
+}
+
+.main-inf a {
+    font-size: 20px;
+    color: #ff6363;
+}
+
+.form {
+    max-width: 420px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(175, 171, 173);
+    font-style: italic;
+}
+
+.form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.form button {
+    background-color: #ff6363;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #ff6363;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.form button:hover {
+    background-color: white;
+    color: #ff6363;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main a {
+    text-decoration: none;
+}
+
+.contact_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact_list li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.contact_list li::before {
+     content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    
+    width: 20px;  
+    height: 20px; 
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.addres::before {
+    background-image: url(/images/gps_marker.png);
+}
+
+.mail::before {
+    background-image: url(/images/message_icon.png);
+}
+
+.phone::before {
+    background-image: url(/images/phone_icon.png);
+}
